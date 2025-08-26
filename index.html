@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashkohu me Ekipin Tim FitLine - Transformo Jetën & Ndërto të Ardhmen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        .animate-float-delayed {
+            animation: float 6s ease-in-out infinite;
+            animation-delay: -3s;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 25% 25%, white 2px, transparent 2px), radial-gradient(circle at 75% 75%, white 2px, transparent 2px); background-size: 100px 100px;"></div>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/20"></div>
+        
+        <!-- Floating Modern Icons -->
+        <div class="absolute top-20 left-10 opacity-20 animate-float">
+            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+        </div>
+        <div class="absolute bottom-20 right-10 opacity-20 animate-float-delayed">
+            <svg class="w-20 h-20 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+            </svg>
+        </div>
+        <div class="absolute top-1/3 right-20 opacity-15 animate-pulse">
+            <svg class="w-12 h-12 text-blue-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+            </svg>
+        </div>
+        <div class="absolute bottom-1/3 left-20 opacity-15 animate-bounce">
+            <svg class="w-14 h-14 text-green-300" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="max-w-5xl mx-auto">
+                <!-- Professional Badge -->
+                <div class="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3 mb-8">
+                    <svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="text-white/90 font-medium">Mentor i Certifikuar FitLine • 200+ Anëtarë Ekipi</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                    Transformo Jetën.<br>
+                    <span class="bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">Ndërto Pasuri.</span><br>
+                    <span class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white/90">Jeto Më Mirë.</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl lg:text-2xl text-white/80 mb-10 leading-relaxed max-w-4xl mx-auto font-light">
+                    Bashkohu me mua në revolucionin FitLine - ku produktet premium të shëndetit takohen me potencialin e pakufizuar të fitimit. 
+                    Fillo udhëtimin tënd drejt lirisë financiare ndërsa i ndihmon të tjerët të arrijnë mirëqenien optimale.
+                </p>
+
+                <!-- Stats Row -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 max-w-3xl mx-auto">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+                        <div class="text-2xl md:text-3xl font-bold text-white">$12K+</div>
+                        <div class="text-sm text-white/70">Mujore</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+                        <div class="text-2xl md:text-3xl font-bold text-white">200+</div>
+                        <div class="text-sm text-white/70">Anëtarë</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+                        <div class="text-2xl md:text-3xl font-bold text-white">15</div>
+                        <div class="text-sm text-white/70">Vende</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+                        <div class="text-2xl md:text-3xl font-bold text-white">3</div>
+                        <div class="text-sm text-white/70">Vjet</div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <button onclick="scrollToRegistration()" class="group bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold py-4 px-8 rounded-2xl text-lg transform hover:scale-105 transition-all duration-300 shadow-2xl flex items-center">
+                        <svg class="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Bashkohu me Ekipin Tim Tani
+                    </button>
+                    <button onclick="scrollToStory()" class="group border-2 border-white/50 text-white hover:bg-white hover:text-gray-800 font-semibold py-4 px-8 rounded-2xl text-lg transition-all duration-300 backdrop-blur-sm flex items-center">
+                        <svg class="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        Mëso Historinë Time
+                    </button>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="mt-12 flex flex-wrap justify-center items-center gap-8 opacity-70">
+                    <div class="flex items-center text-white/60 text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        Mentor i Certifikuar
+                    </div>
+                    <div class="flex items-center text-white/60 text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        Rezultate të Provuara
+                    </div>
+                    <div class="flex items-center text-white/60 text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+                        </svg>
+                        Mbështetje 24/7
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Success Story -->
+    <section id="story" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Udhëtimi Im me FitLine</h2>
+                <p class="text-xl text-gray-600">Nga skeptik në sukses - ja si FitLine ndryshoi gjithçka</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">🎯 Ku Fillova</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tre vjet më parë, isha i bllokuar në rutinën korporative - punoja 60+ orë në javë, i stresuar, 
+                            i pashendetshëm, dhe mezi arrija të mbaja kokën mbi ujë. Isha skeptik për "produktet e shëndetit" dhe 
+                            "mundësitë e biznesit" derisa një mik më prezantoi me FitLine.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-green-50 to-blue-50 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">⚡ Transformimi</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Brenda 30 ditëve të përdorimit të produkteve FitLine, energjia ime u rrit në qiell! 
+                            U ndjeva 10 vjet më i ri! Por ndryshimi i vërtetë ishte zbulimi i mundësisë së biznesit. 
+                            Në vitin e parë, fitova mjaftueshëm për të lënë punën e ditës.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-yellow-50 to-orange-50 p-6 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">🏆 Realiteti i Sotëm</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tani fitoj 6 shifra në vit, punoj nga kudo, dhe kam ndihmuar mbi 200 persona 
+                            të transformojnë shëndetin dhe financat e tyre. Pjesa më e mirë? Sapo po filloj, 
+                            dhe dua që TI të jesh në ekipin tim!
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white rounded-3xl shadow-2xl p-8 card-hover">
+                        <div class="text-6xl mb-4">📈</div>
+                        <h3 class="text-3xl font-bold gradient-text mb-4">Rezultatet e Mia</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Të Ardhura Mujore:</span>
+                                <span class="text-2xl font-bold text-green-600">$12,500+</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Anëtarë Ekipi:</span>
+                                <span class="text-2xl font-bold text-blue-600">200+</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Vende të Arritura:</span>
+                                <span class="text-2xl font-bold text-purple-600">15</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Jetë të Ndryshuara:</span>
+                                <span class="text-2xl font-bold text-red-600">1000+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why FitLine Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Pse FitLine Dominon</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Jo të gjitha kompanitë e shëndetit janë të krijuara njësoj. Ja pse FitLine qëndron mbi të tjerat
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 card-hover text-center">
+                    <div class="text-5xl mb-4">🧬</div>
+                    <h3 class="text-2xl font-bold mb-4">Përsosmëria Shkencore</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        30+ vjet kërkimi, teknologji e patentuar NTC®, dhe produkte të zhvilluara nga 
+                        shkencëtarë të klasit botëror. Kjo nuk është thjesht një kompani tjetër suplementesh.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover text-center">
+                    <div class="text-5xl mb-4">🏅</div>
+                    <h3 class="text-2xl font-bold mb-4">Rezultate të Provuara</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Përdoret nga atletë olimpikë, ekipe profesionale sportive, dhe miliona njerëz në mbarë botën. 
+                        Kur kampionët zgjedhin FitLine, ti e di që funksionon.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 card-hover text-center">
+                    <div class="text-5xl mb-4">💎</div>
+                    <h3 class="text-2xl font-bold mb-4">Cilësi Premium</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Prodhuar në Gjermani me standardet më të larta të cilësisë. Çdo produkt 
+                        testohet për pastërti, fuqi dhe performancë.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Income Opportunity -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Potenciali Yt i të Ardhurave</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Kjo nuk është vetëm për shitjen e produkteve - është për ndërtimin e një biznesi trashëgimie
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-green-100 rounded-full p-3">
+                            <div class="text-2xl">💰</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Burime të Shumta të Ardhurave</h3>
+                            <p class="text-gray-600">Fitim nga shitja, bonuse ekipi, shpërblime udhëheqjeje, dhe të ardhura që rriten ndërsa ti fle.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-blue-100 rounded-full p-3">
+                            <div class="text-2xl">🌍</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Mundësi Globale</h3>
+                            <p class="text-gray-600">FitLine operon në 30+ vende. Ndërto perandorinë tënde ndërkombëtare që nga dita e parë.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-purple-100 rounded-full p-3">
+                            <div class="text-2xl">📚</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Sistem i Plotë Trajnimi</h3>
+                            <p class="text-gray-600">Do të të mentoroj personalisht me sisteme, skripte dhe strategji të provuara që funksionojnë.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="bg-yellow-100 rounded-full p-3">
+                            <div class="text-2xl">⏰</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Liri Kohe</h3>
+                            <p class="text-gray-600">Puno kur do, ku do. Ndërto biznesin rreth jetës sate, jo anasjelltas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl p-8 text-white text-center">
+                    <h3 class="text-3xl font-bold mb-6">Afat Kohor Realist i të Ardhurave</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white/20 rounded-xl p-4">
+                            <div class="text-2xl font-bold">Muaji 1-3</div>
+                            <div class="text-lg">$500 - $2,000/muaj</div>
+                            <div class="text-sm opacity-90">Mëso produktet, ndërto bazën</div>
+                        </div>
+                        <div class="bg-white/20 rounded-xl p-4">
+                            <div class="text-2xl font-bold">Muaji 4-12</div>
+                            <div class="text-lg">$2,000 - $8,000/muaj</div>
+                            <div class="text-sm opacity-90">Ndërto ekipin, zhvillo liderë</div>
+                        </div>
+                        <div class="bg-white/20 rounded-xl p-4">
+                            <div class="text-2xl font-bold">Viti 2+</div>
+                            <div class="text-lg">$10,000+ /muaj</div>
+                            <div class="text-sm opacity-90">Të ardhura të qëndrueshme, liri kohe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Çfarë Merr Kur Bashkohesh</h2>
+                <p class="text-xl text-gray-600">Unë nuk rekrutoj thjesht - investoj në suksesin tënd</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="font-bold mb-2">Mentoring Personal</h3>
+                    <p class="text-sm text-gray-600">Thirrje trajnimi 1-në-1 me mua</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="font-bold mb-2">Mjete Marketingu</h3>
+                    <p class="text-sm text-gray-600">Reklama, skripte dhe sisteme të provuara</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">👥</div>
+                    <h3 class="font-bold mb-2">Mbështetje Ekipi</h3>
+                    <p class="text-sm text-gray-600">Qasje në komunitetin tonë të suksesit</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 card-hover text-center">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="font-bold mb-2">Bonus Fillimi të Shpejtë</h3>
+                    <p class="text-sm text-gray-600">Shpërblime shtesë për veprim të shpejtë</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold gradient-text mb-6">Histori Suksesi</h2>
+                <p class="text-xl text-gray-600">Njerëz të vërtetë, rezultate të vërteta nga ekipi im</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-8 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">A</div>
+                        <div class="ml-4">
+                            <div class="font-bold">Ana M.</div>
+                            <div class="text-sm text-gray-600">U bashkua 8 muaj më parë</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">
+                        "Isha një nënë beqare që punoja dy punë. Tani fitoj më shumë në një muaj me FitLine 
+                        se sa fitoja në tre muaj më parë. Fëmijët e mi më në fund kanë nënën që meritojnë!"
+                    </p>
+                    <div class="text-green-600 font-bold">Të Ardhura Mujore: $6,200</div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">M</div>
+                        <div class="ml-4">
+                            <div class="font-bold">Marko R.</div>
+                            <div class="text-sm text-gray-600">U bashkua 1 vit më parë</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">
+                        "Isha skeptik në fillim, por produktet ndryshuan jetën time. Humba 30 kg, 
+                        fitova energji, dhe tani po i ndihmoj të tjerët të bëjnë të njëjtën gjë ndërsa ndërtoj pasuri."
+                    </p>
+                    <div class="text-green-600 font-bold">Të Ardhura Mujore: $9,800</div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl p-8 card-hover">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">L</div>
+                        <div class="ml-4">
+                            <div class="font-bold">Lira K.</div>
+                            <div class="text-sm text-gray-600">U bashkua 6 muaj më parë</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">
+                        "E pensionova burrin në 6 muaj! Tani udhëtojmë botën ndërsa biznesi ynë FitLine 
+                        funksionon vetë. Vendimi më i mirë që kemi marrë ndonjëherë."
+                    </p>
+                    <div class="text-green-600 font-bold">Të Ardhura Mujore: $11,500</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration" class="py-20 gradient-bg">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Gati të Fillosh Udhëtimin?</h2>
+                    <p class="text-xl text-white/90">Bashkohu me ekipin tim sot dhe le të ndërtojmë historinë tënde të suksesit së bashku</p>
+                </div>
+                
+                <div class="bg-white rounded-3xl shadow-2xl p-8">
+                    <form id="registrationForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+                        <!-- Personal Information -->
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Emri *</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Mbiemri *</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Adresa Email *</label>
+                            <input type="email" id="email" name="_replyto" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Numri i Telefonit *</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Situata Aktuale *</label>
+                            <select id="situation" name="situation" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                                <option value="">Zgjidh situatën tënde aktuale</option>
+                                <option value="employed">I punësuar me kohë të plotë</option>
+                                <option value="parttime">I punësuar me kohë të pjesshme</option>
+                                <option value="selfemployed">Vetëpunësuar</option>
+                                <option value="unemployed">Duke kërkuar mundësi</option>
+                                <option value="retired">I pensionuar</option>
+                                <option value="student">Student</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Objektivi i të Ardhurave Mujore *</label>
+                            <select id="incomeGoal" name="incomeGoal" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                                <option value="">Zgjidh objektivin tënd të të ardhurave</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-3000">$1,000 - $3,000</option>
+                                <option value="3000-5000">$3,000 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000+">$10,000+</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Pse do të bashkohesh me FitLine? *</label>
+                            <textarea id="motivation" name="motivation" required rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Më trego për objektivat dhe motivimin tënd..."></textarea>
+                        </div>
+
+                        <!-- Hidden fields for Formspree -->
+                        <input type="hidden" name="sponsor" value="20908488">
+                        <input type="hidden" name="_subject" value="Regjistrimi i Ri FitLine - Anëtar i Ekipit">
+                        
+                        <div class="space-y-3">
+                            <label class="flex items-start">
+                                <input type="checkbox" id="terms" name="terms" required class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-1">
+                                <span class="ml-3 text-sm text-gray-600">
+                                    Pajtohem të kontaktohem për mundësinë e biznesit FitLine dhe kuptoj që kjo nuk është garanci e të ardhurave *
+                                </span>
+                            </label>
+                            
+                            <label class="flex items-start">
+                                <input type="checkbox" id="updates" name="updates" class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500 mt-1">
+                                <span class="ml-3 text-sm text-gray-600">
+                                    Dua të marr këshilla suksesi dhe përditësime ekipi përmes email-it
+                                </span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold py-4 px-6 rounded-lg hover:from-yellow-500 hover:to-orange-600 transform hover:scale-105 transition-all duration-200 shadow-lg text-lg">
+                            🚀 PO! Dua të Bashkohem me Ekipin Tënd
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="hidden text-center py-8">
+                        <div class="text-6xl mb-4">🎉</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Mirë se erdhe në Ekip!</h3>
+                        <p class="text-gray-600 mb-6">
+                            Faleminderit që more këtë hap të rëndësishëm! Do të të kontaktoj personalisht brenda 24 orëve 
+                            për të planifikuar thirrjen tënde të mirëseardhjes dhe për të të filluar udhëtimin me FitLine.
+                        </p>
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                            <p class="text-green-800 font-medium">
+                                📧 Kontrollo email-in për hapat e menjëhershëm<br>
+                                📱 Do të të telefonoj personalisht brenda 24 orëve<br>
+                                🎯 Udhëtimi yt i suksesit fillon TANI!
+                            </p>
+                        </div>
+                        <button onclick="window.open('http://20908488.pm-quickstart.com/', '_blank')" class="bg-gradient-to-r from-green-500 to-blue-600 text-white font-bold py-4 px-8 rounded-lg hover:from-green-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+                            🚀 Vazhdo në Hapat e Ardhshëm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold mb-4">Gati të Ndryshosh Jetën?</h3>
+                <p class="text-gray-400 mb-6">Mos prit një ditë tjetër për të filluar ndërtimin e së ardhmes sate</p>
+                <button onclick="scrollToRegistration()" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-full transition-all duration-200">
+                    Bashkohu me Ekipin Tim Tani
+                </button>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-400 text-sm">
+                    © 2024 Mundësia e Biznesit FitLine. Rezultatet individuale mund të ndryshojnë. 
+                    Kjo është një mundësi biznesi e pavarur me PM-International AG.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToRegistration() {
+            document.getElementById('registration').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function scrollToStory() {
+            document.getElementById('story').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            // Basic validation before Formspree submission
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const situation = document.getElementById('situation').value;
+            const incomeGoal = document.getElementById('incomeGoal').value;
+            const motivation = document.getElementById('motivation').value;
+            const terms = document.getElementById('terms').checked;
+            
+            if (!firstName || !lastName || !email || !phone || !situation || !incomeGoal || !motivation || !terms) {
+                e.preventDefault();
+                alert('Ju lutem plotësoni të gjitha fushat e kërkuara dhe pranoni kushtet.');
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                alert('Ju lutem shkruani një adresë email të vlefshme.');
+                return;
+            }
+            
+            // Show loading state
+            const submitButton = e.target.querySelector('button[type="submit"]');
+            submitButton.innerHTML = '⏳ Duke dërguar...';
+            submitButton.disabled = true;
+            
+            // Let Formspree handle the actual submission
+            // After successful submission, Formspree will redirect or we can handle with AJAX
+        });
+
+        // Handle successful form submission (if using AJAX with Formspree)
+        function showSuccessMessage() {
+            document.getElementById('registrationForm').style.display = 'none';
+            document.getElementById('successMessage').classList.remove('hidden');
+            document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Add scroll animations
+        window.addEventListener('scroll', function() {
+            const elements = document.querySelectorAll('.card-hover');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.card-hover');
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'all 0.6s ease';
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'974f754f77b423dd',t:'MTc1NjE3MDcxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
